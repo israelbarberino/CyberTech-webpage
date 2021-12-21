@@ -1,0 +1,577 @@
+/* ==========
+GLOBALS
+========== */
+
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0em;
+    width: 100%;
+    display: block;
+    line-height: 1.5;
+    color:navy;
+}
+
+a{
+    text-decoration: none;
+    color: navy;
+}
+
+a:hover{
+    color:#25f5d9;
+}
+
+img{
+    max-width: 100%;
+}
+
+h2{
+    margin-left: 2em;
+}
+
+/* ==========
+BOTÃO VOLTAR AO TOPO - TOP BUTTON
+========== */
+/*
+
+
+/* ==========
+HEADER E BARRA DE NAVEGAÇÃO
+========== */
+
+
+.navbar-header{
+    width: 100%;
+    height: 65px;
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    max-height: 200px;
+    padding: 0;
+    z-index: 3000;
+    border: none;
+    background-color: white !important;
+    margin-bottom: 0;
+}
+
+.minilogo-box{
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 5px;
+    float: left;
+}
+
+.minilogo-box img{
+    height: fit-content;
+    margin: auto;
+}
+
+#topo{
+    float: left;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 20pt;
+    margin-top: 5px;
+}
+
+.navbar-toggle{
+    float: right;
+    margin-right: 50px;
+    padding: inherit;
+    margin-top: 5px;  
+}
+
+.navbar-toggle ul li{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 13pt;
+}
+
+.navbar-toggle ul li img{
+    width: 20px;
+    height: auto;
+}
+
+/*==========
+CORPO DO SITE
+========== */
+
+body{
+    margin-top: 3%;
+    min-height: auto;
+    background-color:white;
+}
+
+/*==========
+MAIN - PRIMEIRA PARTE
+=========== */
+
+.main-area {
+    background: linear-gradient(rgba(44, 62, 80, 0.65), rgba(52, 152, 219, 0.65)),
+                  url("../img/main/main.jpg") no-repeat fixed center;
+      background-size: cover;
+      color: #fff;
+      padding-bottom: 10%;
+}
+  
+  .splash .container {
+    padding-top: 25vh; /* No JS fallback*/
+    padding-bottom: 25vh; /* No JS fallback*/
+}
+
+.main-area-promotion{
+    padding-top: 10%;
+    padding-bottom: 20%;
+    padding-right: 10%;
+    text-align: right;
+}
+
+.promotion-title{
+    font-size: 3vw;
+}
+
+.promotion-text{
+    font-size: 2vw;
+}
+
+.promotion-text a{
+    color:aliceblue;
+    text-decoration: underline;
+}
+
+.promotion-text a:hover{
+    color: inherit;
+}
+/*==========
+ABOUT - SOBRE
+===========*/
+
+.about-container{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.about-text{
+    margin-left: 50px;
+    margin-right: 400px;
+    padding: 3%;
+    text-align: justify;
+    border-left: 1px solid #3d65d4; 
+}
+
+.container-about p{
+    text-align: justify;
+    margin-left: 3%;
+    font-size: 12pt;
+}
+
+/*==========
+DEVS
+===========*/
+
+#devs{
+    margin: 10px;
+}
+
+#devs h2{
+    padding-top: 5%;
+}
+
+.dev-container{
+    border-top: 1px solid #3d65d4;
+    margin: 1em auto;
+    width: 95%;
+    text-align: center;
+    padding-bottom: 7%;
+}
+
+.photo-card{
+    width: 240px;
+    height: 480px;
+    border: 1px solid navy;
+    display:inline-table;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.devs-photos img{
+    max-width:240px;
+    max-height: 180px;
+    width: 240px;
+    height: 180px;
+    min-width: 240px;
+    min-height: 180px;
+}
+
+.devs-photos p{
+    margin: 1em;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.devs-photos strong{
+    background-color: navy;
+    color: white;
+    padding-left: 1em;
+    margin-left: -1em;
+}
+
+
+/*==========
+SKILLS - PRODUTOS E SERVIÇOS
+===========*/
+
+#skills{
+    background: linear-gradient(rgba(44, 62, 80, 0.65), rgba(52, 152, 219, 0.65)),
+    url("../img/main/skills-bg.jpeg") no-repeat fixed center;
+    background-size: cover;
+    color: #fff;
+    height: 100%;
+    padding-bottom: 5%;
+}
+
+#skills h2{
+    padding-top: 5%;
+}
+
+.skills-container{
+    margin-top: 1em;
+    margin-left: 50px;
+    width: 95%;
+    text-align: center;
+    border-left: 1px solid #3d65d4;     
+}
+
+.skills-3 {
+    width: 450px;
+    height: 500px; 
+    border: 1px solid navy;
+    display:inline-table;
+    margin: 3em;
+    background-color: #3ebdd6;
+}
+
+@media (max-width: 800px){
+    .skills-3{
+        width: 20%;
+        height: 30%
+    }
+}
+
+.skills-3 img{
+    width: 50px;
+    height: 50px;
+    margin: 5%;
+    padding: 1em;
+}
+
+.skills-3 img:hover{
+    background: rgb(37,245,217);
+    background: -moz-radial-gradient(circle, rgba(37,245,217,1) 0%, rgba(62,189,214,1) 75%);
+    background: -webkit-radial-gradient(circle, rgba(37,245,217,1) 0%, rgba(62,189,214,1) 75%);
+    background: radial-gradient(circle, rgba(37,245,217,1) 0%, rgba(62,189,214,1) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#25f5d9",endColorstr="#3ebdd6",GradientType=1);
+    border-radius: 10px;
+}
+
+.skills-3 p{
+    padding: 2em;
+    text-align: justify;
+}
+
+/*==========
+PORTIFOLIO
+===========*/
+
+#portfolio h2{
+    padding-top: 5%;
+}
+
+.portfolio-container{
+    border-left: 1px solid #3d65d4;
+    margin: 1em auto;
+    width: 95%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.product-box{
+    margin-left: 50px;
+    height: 650px;
+    max-width: 750px ;
+    border: 1px solid #3ebdd6;
+    text-align: justify;
+}
+
+.product-box hr{
+    margin-right: 10px;
+}
+
+.product-box p{
+    margin: 2em;
+}
+
+.image-box{
+    height: 600px;
+    width: fit-content;
+    margin: 1em;
+    background-color: none;
+    float: left;
+}
+
+.image-box img{
+    height: 600px;
+    width: fit-content;
+    max-width: 100%;
+    /*background-color: bisque;*/
+}
+
+#BtnPDF {
+    content: "";
+    margin-left: 15%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: navy;
+    border-radius: none;
+}
+
+#BtnPDF img{
+    width: 50px;
+    height: 50px;
+}
+
+#BtnPDF a:hover{
+    background-color: none;
+}
+
+/*==========
+FAQ
+===========*/
+
+#faq{
+    margin-top: 5%;
+    padding-top: 4%;
+    width: auto;
+    height: 500px;
+    background: linear-gradient(rgb(32, 53, 168, 0.42), rgba(121, 190, 255, 0.21)),
+    url("../img/main/faq-bg.png") no-repeat fixed center;
+    background-size: cover;
+    color: #fff;
+    height: 100%;
+}
+
+.faq-container{
+    margin-left: 50px;
+    margin-right: 500px;
+    padding: 3%;
+    text-align: justify;
+    border-left: 1px solid #3d65d4;
+    height: 600px;
+    font-size: 14pt;
+    line-height: 1.5;
+}
+
+details summary {
+    list-style: none;
+}
+
+.collapse {
+    border: solid 1px;
+    max-width: 800px;
+    margin: 2em;
+    border: none;
+}
+
+.collapse:hover {
+    color: #25f5d9;
+}
+
+.title {
+    cursor: pointer;
+    position: relative;
+}
+  
+.description {
+    border-top: solid 1px;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    margin: 1em;
+}
+  
+/*==========
+CONTACT - CONTATO
+===========*/
+#contact h2{
+    padding-top: 5%;
+}
+
+.contact-container{
+    border-left: 1px solid #3d65d4;
+    margin-left: 50px;
+    height: 600px;
+    padding-bottom: 5%;
+}
+
+.formulary form {
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: aliceblue;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    border-left: 1px solid #3ebdd6;
+    border-bottom: 1px solid #3ebdd6;
+    max-width: 450px;
+    max-height: 450px;
+    width: 450px;
+    height: 450px;
+    float: left;
+}
+  
+  .formulary form input, .contact form textarea {
+    border: inherit;
+    display: block;
+    margin-bottom: 1em;
+    padding: 1em;
+    width: 100%;
+  }
+  
+  .formulary form textarea {
+    height: 250px;
+    width: 450px;
+    resize: none;
+    font-family: inherit;
+    border: inherit;
+  }
+  
+  .formulary form input[type="submit"] {
+    background-size:auto;
+    border-radius: 0;
+    color:#3ebdd6;
+    padding: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-right: 1px solid #3ebdd6;
+    background-color: #3d65d4;
+  }
+
+  .formulary form input:hover{
+      color: #25f5d9;
+  }
+
+#location{
+    float: right;
+    margin-right: 250px;
+    border-left:1px solid #3d65d4;
+    height: 600px;
+    position: block;
+    padding-bottom: 5%;
+}
+
+#location h2{
+    margin-top: -7%;
+}
+
+.location-container{
+    border-left: 1px solid #3ebdd6;
+    border-bottom: 1px solid #3ebdd6;
+    width: 600px;
+    height: 450px;
+    margin-left: 5em;
+    margin-top: 3em;
+    padding: 1em;
+    background-color: aliceblue;
+}
+
+/*==========
+NAVBAR - FOOTER
+===========*/
+
+#footer{
+    margin-top: 5%;
+    padding-top: 1%;
+    width: auto;
+    max-height: 500px;
+    background: linear-gradient(rgb(32, 53, 168, 0.42), rgba(121, 190, 255, 0.21)),
+    url("../img/main/footer-bg.png") no-repeat fixed center;
+    background-size: cover;
+    color: #fff;
+    height: 100%;
+}
+
+.remissive-menu{
+    border-left:1px solid #3d65d4;
+    float: left;
+    margin-left: 3em;
+    margin-top: 2em;
+    height: 400px;
+    width: 300px;
+}
+
+.remissive-menu ul li{
+    list-style-type: none;
+}
+
+.remissive-menu a{
+    color: white;
+}
+
+.remissive-menu a:hover{
+   color: #25f5d9;
+}
+
+.menu-item{
+    font-weight: bold;
+    display: inline-block;
+    margin: 1em;
+}
+
+.submenu-item{
+    font-weight: none;
+    margin-bottom: 0.5em;
+}
+
+.social-links{
+    border-left: 1px solid #3d65d4;
+    float: right;
+    margin: 4em;
+    width: 1200px;
+    height: 200px;
+}
+
+.social-links ul li{
+    color:#3ebdd6;
+    list-style: none;
+    display: inline-block;
+    font-size: 25pt;
+}
+
+.social-icon img{
+    width: 40px;
+    height: 40px;
+    margin: 1em;
+}
+
+.social-icon img:hover{
+    background: rgb(37,245,217);
+    background: -moz-radial-gradient(circle, rgba(37,245,217,1) 0%, rgba(62,189,214,1) 75%);
+    background: -webkit-radial-gradient(circle, rgba(37,245,217,1) 0%, rgba(62,189,214,1) 75%);
+    background: radial-gradient(circle, rgba(37,245,217,1) 0%, rgba(62,189,214,1) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#25f5d9",endColorstr="#3ebdd6",GradientType=1);
+    border-radius: 10px;
+}
+
+.social-links p{
+    margin-left: 4em;
+}
+
+/*===========
+MEDIA QUERIES
+============*/
